@@ -1,0 +1,149 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+  
+.container {
+    border: 1px solid red;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.navbar {
+    border: 1px solid red;
+    padding: 1rem;
+}
+
+.hero {
+    place-items: center;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+}
+
+.hero-img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-radius: .75rem;
+}
+
+.hero-text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: white;
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+}
+
+.blog {
+    justify-content: center;
+}
+
+.blogs-container {
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card {
+    padding-bottom: 1rem;
+    max-width: 350px;
+    height: 400px;
+    grid-template-rows: 180px 1fr 1fr 1fr;
+    border-radius: .75rem;
+    box-shadow: 2px 2px 3px 1px rgb(0 0 0 / 0.3);
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.card-img {    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.card-title {
+    align-self: center;
+    font-size: 1.35rem;
+    padding-inline: 1rem;
+}
+
+.card-subtitle {
+    align-self: center;
+    font-size: .9rem;
+    color: rgb(63, 63, 63);
+    padding-inline: 1rem;
+}
+
+.author-date-container {
+    padding-inline: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-img {
+    width: 48px;
+    height: 48px;
+    clip-path: circle();
+}
+
+.author-name {
+    font-size: .9rem;
+    margin-right: auto;
+}
+
+.publish-date {
+    font-size: .9rem;
+}
+
+.footer {
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
