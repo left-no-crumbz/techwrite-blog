@@ -7,6 +7,18 @@
     padding: 0;
 }
 
+:root {
+    --min-font-size: 1rem;
+    --max-font-size: 1.25rem;
+    --min-viewport-width: 20rem;
+    --max-viewport-width: 75rem;
+    font-size: clamp(
+        var(--min-font-size),
+        calc(var(--min-font-size) + (var(--max-font-size) - var(--min-font-size)) * ((100vw - var(--min-viewport-width)) / (var(--max-viewport-width) - var(--min-viewport-width)))),
+        var(--max-font-size)
+    );
+}
+
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -53,13 +65,13 @@ p, h1, h2, h3, h4, h5, h6 {
 .hero {
     place-items: center;
     grid-template-columns: 1fr;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .hero-img {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    border-radius: .75rem;
+    border-radius: 0.75rem;
 }
 
 .hero-text {
@@ -67,41 +79,58 @@ p, h1, h2, h3, h4, h5, h6 {
     grid-row: 1 / 2;
     color: white;
     text-align: center;
+}
 
-    h1 {
-        font-size: 3rem;
-        font-weight: 700;
+.hero-text h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+}
+
+.blog-header {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    h2 {
+        font-size: clamp(1rem, 3vw, 1.8rem);
+    }
+
+    p {
+        width: 75ch;
+        text-align: center;
+        font-size: clamp(0.7rem, 2vw, 1rem);
     }
 }
 
-.blog {
-    justify-content: center;
-}
 
 .blogs-container {
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
     gap: 1rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 1rem;
+    margin-bottom: 3rem;
 }
 
 .card {
     padding-bottom: 1rem;
-    max-width: 350px;
-    height: 400px;
-    grid-template-rows: 180px 1fr 1fr 1fr;
-    border-radius: .75rem;
+    width: 100%;
+    max-width: 21.875rem;
+    grid-template-rows: 180px 2fr 1fr 56px;
+    height: 100%;
+    border-radius: 0.75rem;
     box-shadow: 2px 2px 3px 1px rgb(0 0 0 / 0.3);
-    margin-bottom: 2rem;
-    gap: 1rem;
+    align-items: center;
 }
 
 .card-img {    
     width: 100%;
-    height: 100%;
+    height: 11.25rem;
     object-fit: cover;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-top-left-radius: 0.75rem;
@@ -109,37 +138,38 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .card-title {
-    align-self: center;
-    font-size: 1.35rem;
+    font-size: clamp(1rem, 3vw, 1.35rem);
     padding-inline: 1rem;
+    align-self: center;
 }
 
 .card-subtitle {
-    align-self: center;
-    font-size: .9rem;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
     color: rgb(63, 63, 63);
     padding-inline: 1rem;
+    padding-bottom: 1rem;
 }
 
 .author-date-container {
-    padding-inline: 1rem;
+    padding: 0.5rem 1rem;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .author-img {
-    width: 48px;
-    height: 48px;
+    width: 2.5rem;
+    height: 2.5rem;
     clip-path: circle();
 }
 
 .author-name {
-    font-size: .9rem;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
     margin-right: auto;
 }
 
 .publish-date {
-    font-size: .9rem;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
 .footer {
