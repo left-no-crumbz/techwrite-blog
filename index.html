@@ -10,12 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar flex">
         <h1>Bits and Bytes</h1>
+        <a href="#home">Home</a>
+        <a href="#articles">Articles</a>
     </nav>
 
 
-    <section class="hero grid container">
+    <section id="home" class="hero grid container">
         <img class="hero-img" src="./img/home/hero-img.webp" alt="An image of a cozy laptop setup">
         <div class="hero-text">
             <h1>Technology</h1>
@@ -26,7 +28,7 @@
 
     
     
-    <section class="blog container">
+    <section id="articles" class="blog container">
         
         <div class="blog-header flex">
             <h2>Latest Articles</h2>
@@ -34,7 +36,7 @@
         </div>
         
         <div class="blogs-container grid">
-            <div class="card grid">
+            <a class="card grid" href="./pages/virtual-reality.html">
                 <img class="card-img" src="./img/home/vr-card.webp" alt="An image of a Virtual Reality headset">
                 <h2 class="card-title">A Whole New World: Virtual Reality and Augmented Reality</h2>
                 <p class="card-subtitle">Long story short, no they won’t; here’s why.</p>
@@ -44,8 +46,9 @@
                     <p class="author-name">Kyle Mariano</p>
                     <p class="publish-date">Aug 30</p>
                 </div>
-            </div>
-            <div class="card grid">
+            </a>
+
+            <a class="card grid" href="" href="">
                 <img class="card-img" src="./img/home/society-card.webp" alt="An image of the various contributions of technology on society">
                 <h2 class="card-title">Effects of Technology on Society</h2>
                 <p class="card-subtitle">From Connectivity to Cyber Risks: Technology’s Role in Shaping Society</p>
@@ -55,8 +58,8 @@
                     <p class="author-name">Aaron Francisco</p>
                     <p class="publish-date">Aug 30</p>
                 </div>
-            </div>
-            <div class="card grid">
+            </a>
+            <a class="card grid" href="">
                 <img class="card-img" src="./img/home/business-card.webp" alt="An image of the various contributions of technology on society">
                 <h2 class="card-title">Technology in Business: Transforming the Landscape</h2>
                 <p class="card-subtitle">How Technology is Revolutionizing Business: Key Innovations and Their Impact</p>
@@ -66,14 +69,14 @@
                     <p class="author-name">Patrick Sigua</p>
                     <p class="publish-date">Aug 30</p>
                 </div>
-            </div>
-            <div class="card grid">
+            </a>
+            <a class="card grid" href="">
                 <img class="card-img" src="./img/home/cybercrime-card.webp" alt="An image of a threat actor">
                 <h2 class="card-title">Cyber crimes Throughout the Years</h2>
                 <p class="card-subtitle">Long story short, no they won’t; here’s why.</p>
 
-            </div>
-            <div class="card grid">
+            </a>
+            <a class="card grid" href="">
                 <img class="card-img" src="./img/home/trend-card.webp" alt="An image of the impact of digital trends">
                 <h2 class="card-title">The Impact of Digital Trends</h2>
                 <p class="card-subtitle">Do the surging waves of digital trends draw us away from the real world?</p>
@@ -83,8 +86,9 @@
                     <p class="author-name">Ellaine Gonzales</p>
                     <p class="publish-date">Aug 30</p>
                 </div>
-            </div>
-            <div class="card grid">
+            </a>
+
+            <a class="card grid" href="">
                 <img class="card-img" src="./img/home/ai-card.webp" alt="A cartoon panel of a worker replaced by AI">
                 <h2 class="card-title">Will Artificial Intelligence Replace Software Developers?</h2>
                 <p class="card-subtitle">Long story short, no they won’t; here’s why.</p>
@@ -94,7 +98,8 @@
                     <p class="author-name">Kirsten Dizon</p>
                     <p class="publish-date">Aug 30</p>
                 </div>
-            </div>
+            </a>
+
         </div>
     </section>
 

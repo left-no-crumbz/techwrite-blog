@@ -19,6 +19,10 @@
     );
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -58,8 +62,19 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
+    position: sticky;
+    align-items: center;
     border: 1px solid red;
     padding: 1rem;
+    gap: 2rem;
+}
+
+.navbar :first-child {
+    margin-right: auto;
+}
+
+.navbar :last-child {
+    padding-right: 2rem;
 }
 
 .hero {
@@ -126,6 +141,12 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 0.75rem;
     box-shadow: 2px 2px 3px 1px rgb(0 0 0 / 0.3);
     align-items: center;
+    text-decoration: none;
+}
+
+.card:visited,
+.card {
+    color: black;
 }
 
 .card-img {    
