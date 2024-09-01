@@ -28,6 +28,8 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #242424;
+    background-color: #fafafa;
+
 }
 
 img, picture, video, canvas, svg {
@@ -44,7 +46,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
   
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     width: 100%;
     margin-left: auto;
@@ -64,10 +66,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .navbar {
     margin: 0;
-    background-color: white;
+    background-color: #fafafa;
     width: 100%;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 1rem;
     gap: 2rem;
 
@@ -143,6 +145,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
+    background-color: white;
     padding-bottom: 1rem;
     width: 100%;
     max-width: 21.875rem;

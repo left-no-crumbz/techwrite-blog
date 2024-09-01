@@ -14,6 +14,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #242424;
+    background-color: #fafafa;
 }
 
 main {
@@ -75,7 +76,7 @@ a, a:visited {
 }
 
 .navbar {
-    background-color: white;
+    background-color: #fafafa;
     /* border: 1px solid red; */
     width: 100%;
     align-items: center;
