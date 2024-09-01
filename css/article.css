@@ -13,6 +13,7 @@ html {
 body {
     -webkit-font-smoothing: antialiased;
     font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #242424;
 }
 
 main {
@@ -35,8 +36,14 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    margin-block-start: 1.56em;
+    margin-block-end: 1.56em;
 }
 
+li {
+    margin-block-start: 1.56em;
+    margin-block-end: 1.56em;
+}
 h1, h2 {
     margin: 0;
     padding: 0;
@@ -55,7 +62,7 @@ figcaption {
 }
 
 a, a:visited {
-    color: black;
+    color: #242424;
     text-decoration: underline;
 }
 
@@ -102,8 +109,8 @@ a, a:visited {
 .subtitle {
     color: var(--subtitle-clr);
     font-weight: 400;
-    font-size: 22px;
-    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
+    margin-bottom: 2rem;
 }
 
 .author-img {
@@ -115,6 +122,7 @@ a, a:visited {
 .author-container {
     align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .name-date-container {
@@ -132,6 +140,7 @@ a, a:visited {
 }
 
 .reference {
+    font-size: .9rem;
     padding-left: 50px ;
     text-indent: -50px ;
 }

@@ -27,6 +27,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #242424;
 }
 
 img, picture, video, canvas, svg {
@@ -123,7 +124,7 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 
     p {
-        width: 75ch;
+        max-width: 75ch;
         text-align: center;
         font-size: clamp(0.7rem, 2vw, 1rem);
     }
