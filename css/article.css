@@ -52,6 +52,10 @@ figcaption {
     display: flex;
 }
 
+.grid {
+    display: grid;
+}
+
 .navbar {
     background-color: white;
     /* border: 1px solid red; */
@@ -83,6 +87,32 @@ figcaption {
     color: var(--subtitle-clr);
     font-weight: 400;
     font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.author-img {
+    width: 3.5rem;
+    height: 3.5rem;
+    clip-path: circle();
+}
+
+.author-container {
+    align-items: center;
+    gap: 1rem;
+}
+
+.name-date-container {
+    align-items: center;
+    grid-template-columns: 70px 10px 1fr;
+}
+
+.name-date-container :first-child{
+    grid-column: span 3;
+}
+
+.date, .read-length {
+    color: var(--subtitle-clr);
+    font-size: .8rem;
 }
 
 .reference {
