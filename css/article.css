@@ -1,0 +1,95 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --subtitle-clr: #6B6B6B;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+main {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    /* color: #444; */
+    padding: 1rem;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    margin-top: 1rem;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.navbar {
+    background-color: white;
+    /* border: 1px solid red; */
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 0;
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.navbar :first-child {
+    margin-right: auto;
+}
+
+.navbar :last-child {
+    padding-right: 2rem;
+}
+
+.title {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+.subtitle {
+    color: var(--subtitle-clr);
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.reference {
+    padding-left: 50px ;
+    text-indent: -50px ;
+}
+
+.apa-title {
+    font-style: italic;
+}
