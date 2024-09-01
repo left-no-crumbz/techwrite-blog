@@ -42,10 +42,21 @@ h1, h2 {
     padding: 0;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 figcaption {
     margin-top: 1rem;
     font-size: .8rem;
     text-align: center;
+}
+
+a, a:visited {
+    color: black;
+    text-decoration: underline;
 }
 
 .flex {
@@ -68,6 +79,11 @@ figcaption {
     * {
         margin: 0;
         padding: 0;
+    }
+
+    a, a:visited {
+        color: black !important;
+        text-decoration: none !important;
     }
 }
 
