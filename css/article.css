@@ -75,6 +75,10 @@ a, a:visited {
     display: grid;
 }
 
+.logo {
+    align-items: center;
+}
+
 .navbar {
     background-color: #fafafa;
     /* border: 1px solid red; */
@@ -95,14 +99,26 @@ a, a:visited {
     }
 }
 
+.nav {
+    gap: clamp(1rem, 3vw, 2rem);
+    align-items: center;
+}
+
+.nav > * {
+    width: fit-content;
+    height: 25px;
+}
+.nav > *:hover {
+    border-bottom: 2px solid #242424;
+}
+
 .navbar :first-child {
     margin-right: auto;
 }
 
-.navbar :last-child {
-    padding-right: 2rem;
+.nav :last-child {
+    margin-right: 2rem;
 }
-
 .title {
     font-size: clamp(2rem, 3vw, 2.5rem);
 }

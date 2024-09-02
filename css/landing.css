@@ -64,6 +64,10 @@ p, h1, h2, h3, h4, h5, h6 {
     display: grid;
 }
 
+.logo {
+    align-items: center;
+}
+
 .navbar {
     margin: 0;
     background-color: #fafafa;
@@ -71,21 +75,35 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     /* border: 1px solid red; */
     padding: 1rem;
-    gap: 2rem;
 
     a, a:visited {
-        color: black;
+        color: inherit;
         text-decoration: none;
     }
+}
+
+
+.nav {
+    gap: clamp(1rem, 3vw, 2rem);
+    align-items: center;
+}
+
+.nav > * {
+    width: fit-content;
+    height: 25px;
+}
+.nav > *:hover {
+    border-bottom: 2px solid #242424;
 }
 
 .navbar :first-child {
     margin-right: auto;
 }
 
-.navbar :last-child {
-    padding-right: 2rem;
+.nav :last-child {
+    margin-right: 2rem;
 }
+
 
 .hero {
     place-items: center;
@@ -159,7 +177,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .card:visited,
 .card {
-    color: black;
+    color: inherit;
 }
 
 .card-img {    
@@ -210,4 +228,17 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    background-color: white;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@media (max-width: 500px) {
+    .logo h1 {
+        display: none;
+    }
 }
