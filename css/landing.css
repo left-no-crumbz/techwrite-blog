@@ -18,35 +18,8 @@
         var(--max-font-size)
     );
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #242424;
-    background-color: #fafafa;
-
-}
-
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-}
-
-input, button, textarea, select {
-    font: inherit;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-}
   
 .container {
-    /* border: 1px solid red; */
     position: relative;
     width: 100%;
     margin-left: auto;
@@ -54,14 +27,6 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     overflow: hidden;
-}
-
-.flex {
-    display: flex;
-}
-
-.grid {
-    display: grid;
 }
 
 .logo {
